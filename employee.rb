@@ -4,13 +4,13 @@ class Employee
   attr_reader :first_name, :last_name, :annual_income, :tax_paid, :tax_rate
 
   def initialize(first_name, last_name, annual_income, tax_paid, tax_rate)
-    if first_name == ''
+    if first_name.nil?
       @first_name = '[First Name]'
     else
       @first_name = first_name
     end
 
-    if last_name == ''
+    if last_name.nil?
       @last_name = '[Last Name]'
     else
       @last_name = last_name

@@ -9,12 +9,12 @@ describe Employee do
   end
 
   it 'should use a placeholder if first name is not provided' do
-    expect(Employee.new('', 'Orsillio', '40000', '8800', '18').first_name).to \
+    expect(Employee.new(nil, 'Orsillio', '40000', '8800', '18').first_name).to \
     eql('[First Name]')
   end
 
   it 'should use a placeholder if last name is not provided' do
-    expect(Employee.new('Mike', '', '40000', '8800', '18').last_name).to \
+    expect(Employee.new('Mike', nil, '40000', '8800', '18').last_name).to \
     eql('[Last Name]')
   end
 
