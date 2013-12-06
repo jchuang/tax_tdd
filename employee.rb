@@ -1,3 +1,5 @@
+require 'csv'
+
 class Employee
   attr_reader :first_name, :last_name, :annual_income, :tax_paid, :tax_rate
 
