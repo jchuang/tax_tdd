@@ -28,7 +28,7 @@ class Employee
       @tax_paid = tax_paid.to_i
     end
 
-    @tax_rate = tax_rate
+    @tax_rate = tax_rate.to_f / 100
   end
 
   def self.read_file(filename)

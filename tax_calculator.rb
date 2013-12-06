@@ -1,7 +1,7 @@
 class TaxCalculator
 
   def self.liability(employee)
-    Liability.new
+    Liability.new(employee)
   end
 
 end
