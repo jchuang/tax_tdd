@@ -12,11 +12,11 @@ describe Liability do
     expect(liability.employee).to be_an_instance_of(Employee)
   end
 
-  it 'should expose the amount of tax due' do
+  it 'should calculate the amount of tax due' do
     expect(tax_due).to eql(employee.annual_income * employee.tax_rate)
   end
 
-  it 'should expose the amount owed' do
+  it 'should calculate the amount owed' do
     expect(liability.amount_owed).to eql(tax_due - employee.tax_paid)
   end
 
